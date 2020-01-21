@@ -1,0 +1,14 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.jfxbutton:hover{
+    -fx-background-color: black;
+    -fx-text-fill: yellow;
+    -fx-text-alignment: center;
+ 
+  
+}
+.jfxbutton{
+    -fx-background-color: #ffffff;
+  }

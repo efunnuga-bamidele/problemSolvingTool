@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane id="AnchorPane" fx:id="page" prefHeight="479.0" prefWidth="768.0" style="-fx-background-color: white;" stylesheets="@../css/information.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InformationController">
+   <children>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="538.0" prefWidth="727.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="NEVER" maxWidth="50.0" minWidth="10.0" prefWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="195.0" />
+                  <ColumnConstraints hgrow="NEVER" maxWidth="106.0" minWidth="10.0" prefWidth="49.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="215.0" />
+                  <ColumnConstraints hgrow="NEVER" maxWidth="99.0" minWidth="10.0" prefWidth="53.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="154.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <JFXToolbar GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <center>
+                        <FontAwesomeIconView glyphName="ID_CARD" glyphStyle="-fx-fill:purple" size="2.5em" BorderPane.alignment="CENTER" />
+                     </center>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </JFXToolbar>
+                  <JFXToolbar GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <center>
+                        <FontAwesomeIconView glyphName="STREET_VIEW" glyphStyle="-fx-fill:purple" size="2.5em" BorderPane.alignment="CENTER" />
+                     </center>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </JFXToolbar>
+                  <JFXToolbar GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <center>
+                        <FontAwesomeIconView glyphName="EDIT" glyphStyle="-fx-fill:purple" size="2.5em" BorderPane.alignment="CENTER" />
+                     </center>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </JFXToolbar>
+                  <JFXToolbar GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <center>
+                        <FontAwesomeIconView glyphName="GEARS" glyphStyle="-fx-fill:purple" size="2.5em" BorderPane.alignment="CENTER" />
+                     </center>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </JFXToolbar>
+                  <JFXToolbar GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <center>
+                        <FontAwesomeIconView glyphName="USER_CIRCLE" glyphStyle="-fx-fill:purple" size="2.5em" BorderPane.alignment="CENTER" />
+                     </center>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </JFXToolbar>
+                  <JFXToolbar GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <center>
+                        <FontAwesomeIconView glyphName="EDIT" glyphStyle="-fx-fill:purple" size="2.5em" BorderPane.alignment="CENTER" />
+                     </center></JFXToolbar>
+                  <JFXToolbar GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <center>
+                        <FontAwesomeIconView glyphName="EDIT" glyphStyle="-fx-fill:purple" size="2.5em" BorderPane.alignment="CENTER" />
+                     </center>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </JFXToolbar>
+                  <JFXToolbar GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <center>
+                        <FontAwesomeIconView glyphName="EDIT" glyphStyle="-fx-fill:purple" size="2.5em" BorderPane.alignment="CENTER" />
+                     </center></JFXToolbar>
+                  <JFXToolbar GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <center>
+                        <FontAwesomeIconView glyphName="MAP" glyphStyle="-fx-fill:purple" size="2.5em" BorderPane.alignment="CENTER" />
+                     </center>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </JFXToolbar>
+                  <JFXToolbar GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <center>
+                        <FontAwesomeIconView glyphName="CALENDAR" glyphStyle="-fx-fill:purple" size="2.5em" BorderPane.alignment="CENTER" />
+                     </center>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </JFXToolbar>
+                  <JFXToolbar GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <center>
+                        <JFXToolbar BorderPane.alignment="CENTER">
+                           <center>
+                              <FontAwesomeIconView glyphName="CALENDAR" glyphStyle="-fx-fill:purple" size="2.5em" BorderPane.alignment="CENTER" />
+                           </center>
+                        </JFXToolbar>
+                     </center></JFXToolbar>
+                  <JFXToolbar GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                     <center>
+                        <FontAwesomeIconView glyphName="BINOCULARS" glyphStyle="-fx-fill:purple" size="2.5em" BorderPane.alignment="CENTER" />
+                     </center>
+                  </JFXToolbar>
+                  <JFXTextField fx:id="id" editable="false" focusColor="#2e00ff" labelFloat="true" maxWidth="1.7976931348623157E308" styleClass="jfx-text" unFocusColor="BLACK" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets left="13.0" right="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="machine" focusColor="#2e00ff" labelFloat="true" maxWidth="1.7976931348623157E308" promptText="Enter Equipment Name *" styleClass="jfx-text" unFocusColor="BLACK" GridPane.columnIndex="3">
+                     <GridPane.margin>
+                        <Insets left="13.0" right="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="equipment" focusColor="#2e00ff" labelFloat="true" maxWidth="1.7976931348623157E308" promptText="Enter Equipment Location *" styleClass="jfx-text" unFocusColor="BLACK" GridPane.columnIndex="5">
+                     <GridPane.margin>
+                        <Insets left="13.0" right="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXComboBox fx:id="department" focusColor="#ffe800" labelFloat="true" maxWidth="1.7976931348623157E308" promptText="Select Department" styleClass="cell" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="13.0" right="10.0" />
+                     </GridPane.margin>
+                  </JFXComboBox>
+                  <JFXTextField fx:id="fullname" focusColor="#2e00ff" labelFloat="true" maxWidth="1.7976931348623157E308" promptText="Full Name" styleClass="jfx-text" unFocusColor="BLACK" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="13.0" right="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXDatePicker fx:id="in_date" defaultColor="#3c1fb8" editable="false" maxWidth="1.7976931348623157E308" overLay="true" promptText="&lt;AUTO SECTION&gt;" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="13.0" right="10.0" />
+                     </GridPane.margin>
+                     <styleClass>
+                        <String fx:value="jfx-text-field" />
+                        <String fx:value="jfx-date-picker" />
+                     </styleClass>
+                  </JFXDatePicker>
+                  <JFXTextArea fx:id="description" focusColor="#6500ff" labelFloat="true" maxWidth="1.7976931348623157E308" promptText="Enter Problem Description" styleClass="jfx-text" unFocusColor="BLACK" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" left="13.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </JFXTextArea>
+                  <JFXTextArea fx:id="solution" focusColor="#6500ff" labelFloat="true" maxWidth="1.7976931348623157E308" promptText="Enter Solution To Problem" styleClass="jfx-text" unFocusColor="BLACK" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="6.0" left="13.0" right="10.0" top="15.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </JFXTextArea>
+                  <JFXButton fx:id="gallery" buttonType="RAISED" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="157.0" styleClass="jfxbutton" text="Add Images" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="15.0" right="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXToolbar prefHeight="81.0" prefWidth="147.0" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="4">
+                     <bottom>
+                        <Rating fx:id="rating" partialRating="true" prefHeight="32.0" prefWidth="138.0" rating="0.0" BorderPane.alignment="CENTER" />
+                     </bottom>
+                     <GridPane.margin>
+                        <Insets bottom="15.0" right="30.0" />
+                     </GridPane.margin>
+                  </JFXToolbar>
+                  <JFXToolbar GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <left>
+                        <JFXToggleButton fx:id="approved" text="Approved" textFill="WHITE" toggleColor="#00ff19" toggleLineColor="WHITE" unToggleColor="RED" unToggleLineColor="#bfbdbd" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="Arial Black" size="14.0" />
+                           </font>
+                        </JFXToggleButton>
+                     </left>
+                  </JFXToolbar>
+                  <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnSpan="6" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                     </GridPane.margin>
+                     <children>
+                        <JFXButton buttonType="RAISED" contentDisplay="RIGHT" defaultButton="true" disable="true" prefHeight="34.0" prefWidth="91.0" ripplerFill="#4023bf" styleClass="jfxbutton" text="Save" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="#319a64" glyphName="SEND" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="edit" buttonType="RAISED" contentDisplay="RIGHT" defaultButton="true" layoutX="308.0" layoutY="24.0" onAction="#editSolution" prefHeight="34.0" prefWidth="91.0" ripplerFill="#24bd86" styleClass="jfxbutton" text="Edit" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="EDIT" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="delete" buttonType="RAISED" contentDisplay="RIGHT" defaultButton="true" layoutX="354.0" layoutY="24.0" onAction="#deleteSolution" prefHeight="34.0" prefWidth="91.0" ripplerFill="#adbd24" styleClass="jfxbutton" text="Delete" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="RED" glyphName="TRASH" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="clear" buttonType="RAISED" contentDisplay="RIGHT" defaultButton="true" layoutX="399.0" layoutY="24.0" onAction="#clearSolution" prefHeight="34.0" prefWidth="91.0" ripplerFill="#bd2424" styleClass="jfxbutton" text="Clear" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="ERASER" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="print" buttonType="RAISED" contentDisplay="RIGHT" defaultButton="true" layoutX="445.0" layoutY="24.0" onAction="#printPage" prefHeight="34.0" prefWidth="91.0" ripplerFill="#bd249a" styleClass="jfxbutton" text="Print" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="13.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="#eeff00" glyphName="PRINT" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <JFXTextField fx:id="title" focusColor="#2e00ff" labelFloat="true" layoutX="317.0" layoutY="109.0" maxWidth="1.7976931348623157E308" promptText="Title" styleClass="jfx-text" unFocusColor="BLACK" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextArea fx:id="description1" focusColor="#6500ff" labelFloat="true" layoutX="73.0" layoutY="170.0" maxWidth="1.7976931348623157E308" promptText="Enter Problem Description" styleClass="jfx-text" unFocusColor="BLACK" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="15.0" left="13.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                  </JFXTextArea>
+                  <JFXTextArea fx:id="description11" focusColor="#6500ff" labelFloat="true" layoutX="315.0" layoutY="160.0" maxWidth="1.7976931348623157E308" promptText="Enter Problem Description" styleClass="jfx-text" unFocusColor="BLACK" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="6.0" left="13.0" right="19.0" top="15.0" />
+                     </GridPane.margin>
+                  </JFXTextArea>
+                  <JFXToolbar GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <center>
+                        <FontAwesomeIconView glyphName="IMAGE" glyphStyle="-fx-fill:purple" size="2.5em" BorderPane.alignment="CENTER" />
+                     </center>
+                  </JFXToolbar>
+                  <JFXDatePicker fx:id="in_date1" defaultColor="#3c1fb8" layoutX="607.0" layoutY="111.0" maxWidth="1.7976931348623157E308" overLay="true" promptText="Date Problem Occured *" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                     <styleClass>
+                        <String fx:value="jfx-text-field" />
+                        <String fx:value="jfx-date-picker" />
+                     </styleClass>
+                     <GridPane.margin>
+                        <Insets left="13.0" right="10.0" />
+                     </GridPane.margin>
+                  </JFXDatePicker>
+               </children>
+               <BorderPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </BorderPane.margin>
+            </GridPane>
+         </center>
+         <top>
+            <JFXToolbar prefHeight="29.0" prefWidth="768.0" BorderPane.alignment="CENTER">
+               <center>
+                  <Label fx:id="status" alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" textFill="RED" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </Label>
+               </center>
+            </JFXToolbar>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

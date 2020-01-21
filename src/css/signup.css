@@ -1,0 +1,23 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.jfx-textfield{
+    -fx-text-fill: white;
+}
+.jfxbutton:hover{
+    -fx-background-color: black;
+    -fx-text-fill: yellow;
+    -fx-text-alignment: center;
+
+    -fx-cursor: hand;
+  
+}
+.jfxbutton{
+-fx-border-radius:12px;
+  }
+  .jfxComboBox{
+    
+      -fx-font-size: 13px;
+      -fx-font-weight: bold;
+  }

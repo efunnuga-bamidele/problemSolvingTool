@@ -1,0 +1,28 @@
+/*
+ * Empty Stylesheet file.
+ */
+.animated-option-button{
+    -fx-background-color: #440440;
+    -fx-background-radius: 50px;
+    -fx-pref-height:50px;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-radius: 50px;
+    -fx-border-width: 4px;
+}
+
+.animated-option-sub-button{
+     -fx-background-color: #43509c;
+     }
+.animated-option-sub-button2{
+     -fx-background-color: rgb(203,104,95);
+     }
+     .animated-option-sub-button3{
+     -fx-background-color: rgb(203,104,95);
+     }
+
+.jfx-text{
+  -fx-text-fill: white;
+    -fx-font-weight:bold;
+    -fx-font: 13px "Arial Black";
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="490.0" prefWidth="742.0" stylesheets="@../css/category.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CategoryController">
+   <children>
+      <BorderPane prefHeight="490.0" prefWidth="742.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <TableView fx:id="result" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="10.0" right="10.0" top="13.0" />
+               </BorderPane.margin>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </center>
+         <top>
+            <JFXToolbar BorderPane.alignment="CENTER">
+               <center>
+                  <JFXTextField fx:id="search_bar" focusColor="#f20000" labelFloat="true" onKeyReleased="#getResult" promptText="Enter Depertment, Problem Description, Location, Machine Name" styleClass="jfx-text" unFocusColor="WHITE" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                  </JFXTextField>
+               </center>
+               <BorderPane.margin>
+                  <Insets left="100.0" right="100.0" top="20.0" />
+               </BorderPane.margin>
+               <left>
+                  <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" BorderPane.alignment="CENTER" />
+               </left>
+            </JFXToolbar>
+         </top>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="42.0" prefWidth="742.0" spacing="40.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#getCount" text="View Details" />
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Utilities Department : ">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="utl" fill="#dceb02" strokeType="OUTSIDE" strokeWidth="0.0" text="0" underline="true">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Brewing Department :">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="brew" fill="#ebe002" strokeType="OUTSIDE" strokeWidth="0.0" text="0" underline="true">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Packaging Department :">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="pkg" fill="#ebe002" strokeType="OUTSIDE" strokeWidth="0.0" text="0" underline="true">
+                     <font>
+                        <Font name="Arial Black" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

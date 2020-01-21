@@ -1,0 +1,37 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.combo-box .cell{
+    -fx-text-fill: red;
+    -fx-font-weight:bold;
+    -fx-font: 11px "Arial Black";
+}
+.jfx-date-picker .jfx-text-field{
+    -jfx-unfocus-color: red;
+    -fx-text-fill: red;
+    -fx-font-weight:bold;
+    -fx-font: 11px "Arial Black";
+}
+.jfx-text{
+-fx-text-fill: black;
+    -fx-font-weight:bold;
+    -fx-font: 13px "Arial Black";
+}
+.jfxbutton{
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+    -fx-cursor: hand;
+  
+}
+.jfxbutton:hover{
+    -fx-background-color: black;
+    -fx-text-fill: yellow;
+    -fx-text-alignment: center;
+    -fx-cursor: hand;
+  
+}
+.jfxbutton{
+-fx-border-radius:12px;
+  }

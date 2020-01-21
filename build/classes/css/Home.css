@@ -1,0 +1,23 @@
+
+.jfx-hamburger {
+
+.jfx-hamburger {
+    -fx-padding: 10.0;
+    -fx-spacing: 4px;
+    -fx-cursor: hand;
+}
+
+.jfx-hamburger StackPane {
+    -fx-pref-width: 30px;
+    -fx-pref-height: 4px;
+    -fx-background-color: #FFF;
+    -fx-background-radius: 5px;
+}
+}
+.jfx-BorderPane{
+    -fx-background-image:url("/image/bg2.jpg")no-repeat 0px 0px;
+    -fx-background-size:cover;
+}
+.label{
+    -fx-spacing: 2px;
+}

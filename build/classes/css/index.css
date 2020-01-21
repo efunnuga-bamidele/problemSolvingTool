@@ -1,0 +1,20 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.jfxTreeTableView{
+ 
+}
+.jfx-textfield{
+    -fx-text-fill: white;
+}
+.jfxbutton:hover{
+    -fx-background-color: black;
+    -fx-text-fill: yellow;
+    -fx-text-alignment: center;
+    -fx-cursor: hand;
+  
+}
+.jfxbutton{
+-fx-border-radius:12px;
+  }
