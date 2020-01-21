@@ -1,4 +1,4 @@
-# Problem SOlving Tracker Application
+# Problem Solving Tracker Application
 
 ## Programming language used was JavaFX and jfoenix library
 
